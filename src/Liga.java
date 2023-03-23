@@ -73,7 +73,7 @@ public class Liga {
         //Creamos una lista de jugadores en común.
         List<Jugador> jugadoresEnComun = new ArrayList<>();
         //Si no contiene e1 o e2 lanzamos una excepción.
-        if (!(equipos.contains(e1) && equipos.contains(e2))) {
+        if (!equipos.contains(e1) && equipos.contains(e2)) {
             throw new LigaException("Uno de los dos equipos introducidos no se encuentra en la liga.");
         }
         /*
